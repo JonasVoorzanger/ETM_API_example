@@ -7,20 +7,7 @@ var ETMscenario = function(opts){
         // Sets the default options for this object
         this.defaultopts = {
             Scenario_Name: "ETMscenario",
-            End_Year: 2050,
-            Inputs: [
-                    "households_insulation_level_new_houses",
-                    "households_insulation_level_old_houses",
-                ],
-            Gqueries: [
-                    {Gquery: "gas_households_in_mekko_of_primary_demand", Name: "Gasverbruik"},
-                    {Gquery: "coal_households_in_mekko_of_primary_demand", Name: "Kolenverbruik"},
-                ],
-            Graphs: ["Warmtevraag"],
-            Check4Challenge: true,
-            ChallengeQuestionNumber: 90,
-            Achievement_Holder: "Achievement_Holder",
-            ChallengeName: "Level5",
+            End_Year: 2030,
         };
         // Takes the options and optionvalues from the 'opts'-hash and 
         // overwrites the corresponding values in 'defaultopts'
