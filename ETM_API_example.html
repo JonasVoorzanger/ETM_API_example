@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<link rel="stylesheet" href="ETM_API_example_style.css">
+
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	<title>ETM API Example</title>
+</head>
+
+<body>
+
+<h1>The Energy Transition Model API</h1>
+
+<h3>Introduction</h3>
+
+<p>The <a href="http://energytransitionmodel.com/qi">Energy Transition Model</a> (ETM), created by <a href="http://quintel.com/">Quintel Intelligence</a>, has a freely available Application Programming Interface (<a href="http://www.et-model.com/api">API</a>). This API enables developers to use the engine (or 'calculator') behind the ETM within an external application.</p>
+
+<p>The example below can be used as a starting point to create your own web application with ETM interactivity. To do this, basic knowledge about <em>HTML</em>, <em>Javascript</em> and <em>jQuery</em> is required (excellent tutorials are freely available on <a href="http://www.codecademy.com/">Codecademy.com</a>). The example also uses functionality from within the <a href="http://d3js.org/"><em>D3.js</em></a> and <a href="http://www.highcharts.com/demo"><em>Highcharts.js</em></a> libraries.</p>
+
+<p>The HTML of this page and the required required Javascript files can be found on this <a href="https://github.com/JonasVoorzanger/ETM_API_example">Github repository</a>. This <a href="/ETM_API_overview.pdf">PDF file</a> shows a graphical overview of the different steps involved in initializing and updating a ETM scenario through the API.</p>
+
+<h3>Interactive API example</h3>
+
+<!-- Holders for Graphs -->
+<div id="Primary_chart" class="graph small" style="margin-left: auto; margin-right: auto"></div>
+<div id="Heat_chart" class="graph small" style="margin-left: auto; margin-right: auto"></div>
+<div id="CO2_chart" class="graph small" style="margin-left: auto; margin-right: auto"></div>
+
+<!-- Holder for Sliders -->
+<div id="SliderHolder" class="sliders_level5" style="width: 810px"></div>
+
+<script type="text/javascript" src="ETM_API_example_functions.js"></script>
+<script type="text/javascript" src="ETM_API_example_data.js"></script>
+<script type="text/javascript" src="ETM_API_example_graphs.js"></script>
+
+</body>
+</html>
